@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+
+  </head>
+  <body>
+
+    <header>
+      <h1>Coding Quiz</h1>
+      <p>Take this short coding quiz to see if you have what it takes to become a software engineer!</p>
+    </header>
+    <main>
+        <section>
+            <div class="card timer">
+                <div class="timer-text">
+                  <div class="large-font timer-count">60</div>
+                  <h3>seconds remaining</h3>
+                </div>
+        </section>
+        <div id="container">
+            <div id="home" class="flex-column flex-center">
+                <div id="startQuizDiv">
+                    <button class='playBtn'>Play</button>
+                </div>
+                <div id='question1' class="question-numbers">
+                    <ul id='choices1'></ul>
+                </div>
+                <div id='question2'class=" question-numbers">
+                    <ul id='choices2'></ul>
+                </div>
+                <div id='question3'class=" question-numbers">
+                    <ul id='choices3'></ul>
+                </div>
+                <div id='question4'class=" question-numbers">
+                    <ul id='choices4'></ul>
+                </div>
+                <div id='question5'class=" question-numbers">
+                    <ul id='choices5'></ul>
+                </div>
+                
+                <a href="/highscores.html" id= "highscore-btn" class="btn"> Highscores </a>
+            </div>  
+        </div>
+    </main>
+    <script type= "text/javascript" src="game.js"></script>
+  </body>
+</html>
