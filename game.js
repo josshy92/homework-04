@@ -230,4 +230,10 @@ function startTimer() {
       timerCount-=5
   }
 
+  function loseGame() {
+    localStorage.setItem("mostRecentScore", score);
+
+    return window.location.assign("/end.html")
+  }
+
 

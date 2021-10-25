@@ -5,13 +5,14 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-    background-color: rgb(201, 201, 201);
+    background: linear-gradient(rgb(161, 94, 216) 0%, white 100%);
 }
 
 h1 {
+    background: linear-gradient(rgb(186, 130, 238) 10%, rgb(255, 255, 255) 100%);
     text-align: center;
     font-size: 50px;
-    border-bottom:solid black 5px;   
+    border-bottom:double black 5px;   
     margin-top: 2rem; 
 }
 
@@ -19,6 +20,20 @@ header p {
     text-align: center;
     margin-top: 5rem;
     font-size: 20px;
+}
+
+
+.timer-count {
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(140, 0, 255);
+    margin-top: 2rem;
+    text-shadow: 3px 3px black ;
+}
+section div h3 {
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .flex-column {
@@ -40,7 +55,7 @@ header p {
 }
 #container {
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,5 +162,27 @@ input::placeholder {
       margin-right: 0 auto;
       width: 8em;
       display: block;
+      text-align: center;
+    }
+    .end-form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 30rem;
+    }
+    #saveScoreBtn {
+        align-items: center;
+    }
+    .playBtn {
+        align-items: center;
+        background-color: cyan;
+    }
+    .timer-count {
+        color: cyan;
+        margin-top: 2rem;
+        text-shadow: 3px 3px black ;
     }
 }
+
+
