@@ -195,12 +195,12 @@ function renderQuestion5() {
             score += 10
             console.log(score)
             localStorage.setItem("mostRecentScore", score);
-            return window.location.assign("/end.html")
+            return window.location.assign("end.html")
         }
         else {
             localStorage.setItem("mostRecentScore", score);
 
-            return window.location.assign("/end.html")
+            return window.location.assign("end.html")
         }
     }
 }
@@ -233,7 +233,7 @@ function startTimer() {
   function loseGame() {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("/end.html")
+    return window.location.assign("end.html")
   }
 
 
