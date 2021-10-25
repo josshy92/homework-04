@@ -7,7 +7,11 @@
 // start a fucnction that will display question once you hit start
 // make start button render question
 // have choices 
-// make timer   
+// make timer  
+// create highscore page or div
+// have input field and ability to save to local storage
+
+var viewScores = document.getElementById("highscore-btn")
 var timerElement = document.querySelector(".timer-count");
 var timer;
 var timerCount;
@@ -44,7 +48,6 @@ var play = document.querySelector('.playBtn')
 play.addEventListener('click', startQuiz)
 
 function startQuiz() {
-    isWin = false;
     timerCount = 60;
     var startBtn = document.getElementById('startQuizDiv')
     startBtn.style.display = 'none'
@@ -210,14 +213,6 @@ function startTimer() {
     timer = setInterval(function() {
       timerCount--;
       timerElement.textContent = timerCount;
-      if (timerCount >= 0) {
-        // Tests if win condition is met
-        if (isWin && timerCount > 0) {
-          // Clears interval and stops timer
-          clearInterval(timer);
-          winGame();
-        }
-      }
       if (timerCount === 0) {
         // Clears interval
         clearInterval(timer);
@@ -233,7 +228,7 @@ function startTimer() {
   function loseGame() {
     localStorage.setItem("mostRecentScore", score);
 
-    return window.location.assign("end.html")
+    return window.location.href="end.html"
   }
 
 
